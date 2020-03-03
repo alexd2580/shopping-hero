@@ -1,0 +1,13 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the frontend Docker image
+      run: docker build ./frontend --file frontend/Dockerfile --tag frontend
+    - name: Build the backend Docker image
+      run: docker build ./backend --file backend/Dockerfile --tag backend
