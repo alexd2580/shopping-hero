@@ -1,6 +1,6 @@
 import uuid
 from datetime import time
-from shopping_hero.models.shop import Shop
+from app.models.shop import Shop
 
 
 def list_shops():

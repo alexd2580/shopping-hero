@@ -1,7 +1,7 @@
 from sqlalchemy import DECIMAL, TIME, Column, String
 from sqlalchemy.dialects.postgresql import UUID
 
-from shopping_hero.models import Base
+from app.models import Base
 
 
 class Shop(Base):

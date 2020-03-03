@@ -1,5 +1,7 @@
 # Backend
+backend/venv
 backend/dist
+backend/*.egg-info
 **/__pycache__
 
 # Frontend

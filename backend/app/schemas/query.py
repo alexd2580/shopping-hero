@@ -1,6 +1,6 @@
 import graphene
-from shopping_hero.schemas.shop import Shop
-from shopping_hero.core.shop import list_shops
+from app.core.shop import list_shops
+from app.schemas.shop import Shop
 
 
 class Query(graphene.ObjectType):
